@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.iblog.mapper.CollectArticleMapper">
+
+    <!-- 添加一个 CollectArticle -->
+    <insert id="addOneCollectArticle"
+            parameterType="CollectArticle">INSERT INTO collectarticle VALUES(#{uid}, #{aid})</insert>
+
+    <!-- 删除某个 CollectArticle -->
+    <delete id="deleteOneCollectArticle"
+            parameterType="CollectArticle">DELETE FROM collectarticle WHERE uid = #{uid} AND aid = #{aid}</delete>
+
+    <!-- 删除文章之后，根据 aid 删除某个 CollectionArticle -->
+    <delete id="deleteCollectArticleByAid"
+            parameterType="int">DELETE FROM collectarticle WHERE aid = #{aid}</delete>
+    
+    <!-- 查找某个 CollectArticle 是否存在 -->
+    <select id="findOneCollectArticle" parameterType="CollectArticle"
+            resultType="CollectArticle">SELECT * FROM collectarticle WHERE uid = #{uid} AND aid = #{aid}</select>
+
+    <!-- 找到某个 uid 收藏的所有文章列表 -->
+    <select id="findCollectArticleListByUid" parameterType="int"
+            resultType="CollectArticle">SELECT * FROM collectarticle WHERE uid = #{uid}</select>
+</mapper>

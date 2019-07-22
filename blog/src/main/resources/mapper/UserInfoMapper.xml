@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.iblog.mapper.UserInfoMapper">
+
+    <insert id="addUserInfo"
+            parameterType="UserInfo">INSERT INTO userInfo VALUES (#{uiid}, #{sex}, #{birthday}, #{individualResume})</insert>
+
+    <update id="modifyUserInfo"
+            parameterType="UserInfo">UPDATE userInfo SET uiid = #{uiid}, sex = #{sex}, birthday = #{birthday}, individualResume = #{individualResume}</update>
+
+    <select id="getUserInfoById" parameterType="int"
+            resultType="UserInfo">SELECT * from userInfo WHERE uiid = #{uiid}</select>
+
+</mapper>

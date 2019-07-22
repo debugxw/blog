@@ -1,0 +1,123 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body, html {
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+}
+body {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background: #F5D1E3 url(../img/sky-404.png) repeat-x 0 0;
+	color: #FFF;
+	overflow-x: hidden;
+	position: relative;
+	
+}
+#text {
+	position: absolute;
+	top: 60%;
+	left: 100px;
+	z-index: 5;
+}
+h1 {
+	font-size: 30px;
+	line-height: 1.1em;
+	margin-bottom: 15px;
+	font-weight: normal;
+	margin-top: 15px;
+}
+p {
+	font-size: 14px;
+	line-height: 1.2em;
+}
+
+p a{
+	font-size: 16px;
+	line-height: 3em;
+	color: white;
+	transition: .4s;
+	font-weight: 400px;
+}
+
+p a:hover{
+	color: #C40000;
+}
+#canvs_blue{
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 60%;
+	background:rgba(128,179,211,1) ;
+	z-index:4;
+}
+#cloud1 {
+	position: absolute;
+	top: 50px;
+	width: 189px;
+	height: 88px;
+	left: 50px;
+	background: transparent url(../img/cloud1-404.png) no-repeat scroll 0 0;
+}
+#cloud2 {
+	position: absolute;
+	top: 220px;
+	width: 69px;
+	height: 29px;
+	left: 275px;
+	background: transparent url(../img/cloud2-404.png) no-repeat scroll 0 0;
+}
+.bottomLinkList {
+	position: absolute;
+	bottom: 5px;
+	height: 30px;
+	line-height: 30px;
+	left: 50%;
+	margin-left: -275px;
+	width: 550px;
+	z-index: 500;
+	text-align: center;
+}
+.bottomLinkList li {
+	list-style-type: none;
+	float: left;
+	width: 100px;
+	color: #FFF;
+	height: 30px;
+}
+.bottomLinkList li a {
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	outline: none;
+}
+
+.copy {
+	margin-top: -4px;
+}
+.tm {
+	vertical-align: super;
+	font-size: 10px;
+}
+.year{
+	margin-left: 2px;
+	margin-right: 3px;
+}
+
+#sun{
+	border-radius: 50%;
+	position: fixed;
+	left: 80%;
+	top: 5%;
+	box-shadow: 1px 5px 50px orange;
+	opacity: 0.6;
+	transition: 2s;
+}
+#sun:hover{
+	transform: rotate(360deg) scale(1.2);
+	box-shadow: 1px 5px 50px rgb(250,100,50);
+	opacity: 1;
+}

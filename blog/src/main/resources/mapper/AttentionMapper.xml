@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.iblog.mapper.AttentionMapper">
+
+    <!-- 添加某个 Attention -->
+    <insert id="addOneAttention"
+            parameterType="Attention">INSERT INTO attention VALUES(#{fuid}, #{tuid})</insert>
+
+    <!-- 删除某个 Attention -->
+    <delete id="deleteOneAttention"
+            parameterType="Attention">DELETE FROM attention WHERE fuid = #{fuid} AND tuid = #{tuid}</delete>
+
+    <!-- 查找某个 Attention 是否存在 -->
+    <select id="findOneAttention" parameterType="Attention"
+            resultType="Attention">SELECT * FROM attention WHERE fuid = #{fuid} AND tuid = #{tuid}</select>
+
+    <!-- 找到某个 fuid 的所有 tuid，返回一个 List -->
+    <select id="findAttentionListByFuid" parameterType="int"
+            resultType="Attention">SELECT * FROM attention WHERE fuid = #{fuid}</select>
+
+</mapper>

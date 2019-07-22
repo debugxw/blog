@@ -1,0 +1,245 @@
+			*{
+				font-family: "Microsoft YaHei";
+			}
+			a{
+				text-decoration: none;
+				color: rgba(255,255,255,0.5);
+				cursor: pointer;
+			}
+			a:hover{
+				text-decoration: none;
+			}
+			.header a{
+				text-decoration: none;
+				color: rgba(255,255,255,0.5);
+				cursor: pointer;
+			}
+			.header a:hover{
+				text-decoration: none;
+				color:rgba(255,255,255,1);
+			}
+			.header{
+				position: relative;
+				z-index: 1003;
+				height: 56px;
+				text-align: center;
+				background-color: #18223d;
+			}
+			.logo-top {
+				display: block;
+				height: 38px;
+				margin-left: 20px;
+				margin-top: 9px;
+			}
+			
+			.menu-warp{
+				position: relative;
+				width: 684px;
+				margin: auto;
+			}
+			.menu {
+				margin: 0;
+				list-style: none;
+				color: #fff;
+				line-height: 56px;
+			}
+			.menu>li{
+				float: left;
+				cursor: pointer;
+			}
+			.menu>li>a{
+				text-decoration: none;
+				position: relative;
+				display: inline-block;
+				height: 56px;
+				padding: 0 17px;
+				font-size: 18px;
+				color: rgba(255,255,255,0.5);
+			}
+			.menu>li>a:hover{
+				text-decoration: none;
+				color: rgba(255,255,255,1);
+			}
+			.header-blue-block{
+				position: absolute;
+				bottom: -56px;
+				display: none;
+				width: 16px;
+				height: 4px;
+				background-color: #4090ff;
+			}
+			span.kuai{
+				position:absolute;
+				top: 23px;
+				left: 32px;
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				background-color:#4090ff;
+			}
+			.gzh{
+				margin: 12px 10px 0 10px;
+			}
+			.gzh>a{
+				display: inline-block;
+			}
+			.login-register{
+				display:inline-block;
+				margin-top: 12px;
+			}
+			.login-register>a{
+				display: inline-block;
+				width: 60px;
+				height: 30px;
+				margin-left: 5px;
+				border: 1px solid #fff;
+				font-size: 13px;
+				line-height: 29px;
+				border-radius:15px;
+				transition: .2s;
+			}
+			.login-register>a:hover{
+				text-decoration: none;
+				color:rgba(255,255,255,1);
+				background-color: rgba(255,255,255,0.4);
+			}
+			
+			/*中间*/
+			.middle{
+				min-height: 100%;
+				z-index: 1003;
+			}
+			.search-box-container{
+				margin: auto;
+				width: 600px;
+				height: 56px;
+				margin-top:200px;
+				
+			}
+			.search-box{
+				padding: 3px;
+				border: 1px solid #818db5;
+			}
+			.search-box-inner {
+		
+			    height: 46px;
+			    border: 2px solid #c2c9de;
+			    line-height: 46px;
+			    background-color: rgba(42, 56, 91, 0.3);
+			}
+			.search-box-inner div{
+				margin-right: 5px;
+			}
+			.left-selection{
+				
+				width: 90px;
+				text-align: center;
+				padding-right: 20px;
+				
+			}
+			.left-selection ul {
+			    position: fixed;
+			    z-index: 1002;
+			    top: 305px;
+			    left: 465px;
+			    width: 90px;
+			    padding: 0;
+			    border: 2px solid rgba(255, 255, 255, 0.39);
+			    list-style: none;
+			}
+			
+			.left-selection li {
+				display: block;
+			    padding-left: 7px;
+			    background-color: #fff;
+			    transition: .2s;
+			    cursor: pointer;
+			}
+			.left-selection li:hover{
+				background-color: rgba(255,255,255,0.8);
+			}
+			.left-selection li a {
+				text-decoration: none;
+			    font-size: 14px;
+			    line-height: 38px;
+			    color: #334784;
+			    white-space: nowrap;
+			}
+
+			.selected{
+				
+				font-size: 14px;
+				color: #333;
+				border: none;
+				text-decoration: none;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			.select-tag:hover{
+				text-decoration: none !important;	
+			}
+			.select-tag>span{
+				
+				margin-left: 2px;
+				font-size: 14px;
+				color: #fff;
+				text-decoration: none;
+			}
+	
+			.middle-input{
+				width: 400px;
+				margin-top: 4px;
+			}
+			
+			.right-button{
+				width: 80px;
+				height: 42px;
+				text-align: center;
+			}
+			.right-button>a{
+				display: inline-block;
+				text-align: center;
+				font-size: 16px;
+				color: #F5F5F5;
+				transition: .2s;
+			}
+			.right-button>a:hover{
+				text-decoration: none !important;
+				color: #FFFFFF;
+				font-size: 18px;
+			}
+			/*脚部分*/
+			.footer{
+				width: 100%;
+				height: 50px;
+				position: absolute;
+				bottom: 0px;
+				text-align: center;
+				margin: auto;
+				color: #F5F5F5;
+			}
+			.footer a:hover{
+				color:#FFFFFF;
+				text-decoration: none;
+			}
+			.l-width{
+				width: 1140px;
+				text-align: center;
+				margin: auto;
+				
+			}
+			/*背景*/
+			.bg-star{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background:url(../img/home-black-bg.jpg) no-repeat ;
+				z-index: -1;  
+			}
+			.MyHome{
+				width: 100px !important;
+				border-radius: 8px !important;
+			}

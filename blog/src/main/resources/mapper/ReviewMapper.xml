@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.iblog.mapper.ReviewMapper">
+
+    <!-- 添加一个评论 -->
+    <insert id="addOneReview"
+            parameterType="map">INSERT INTO review VALUES(null, #{trid}, #{aid}, #{fuid}, 0,
+            now(), #{content})</insert>
+
+    <!-- 删除某篇文章之后，根据 aid 删除评论 -->
+    <delete id="deleteReviewByAid"
+            parameterType="int">DELETE FROM review WHERE aid = #{aid}</delete>
+    
+    <!-- 对某个评论点赞 -->
+    <update id="modifyLikeCountByRid"
+            parameterType="map">UPDATE review set likeCount = #{likeCount} WHERE rid = #{rid}</update>
+
+    <!-- 根据 rid 查找一条评论 -->
+    <select id="findOneReviewByRid" parameterType="int"
+            resultType="Review">SELECT * FROM review WHERE rid = #{rid}</select>
+
+    <!-- 根据某篇文章的 aid 查找评论列表 -->
+    <select id="reviewListByAid" parameterType="int"
+            resultType="Review">SELECT * FROM review WHERE aid = #{aid}</select>
+
+</mapper>
