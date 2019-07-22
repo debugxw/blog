@@ -8,8 +8,8 @@
 该项目开发IDE为IntelliJ IDEA，通过Maven构建，后端采用Spring、SpringMVC、MyBatis，数据库采用MySQL、Redis，前端用到jQuery，bootstrap，editor.md。
 
 ### 项目截图
-![login](https://github.com/debugxw/blog/image/login.png)
-![register](https://github.com/debugxw/blog/image/register.png)
-![personHome](https://github.com/debugxw/blog/image/personHome.png)
-![articleBody](https://github.com/debugxw/blog/image/articleBody.png)
-![articleReview](https://github.com/debugxw/blog/image/articleReview.png)
+![login](https://raw.githubusercontent.com/debugxw/blog/master/image/login.png)
+![register](https://raw.githubusercontent.com/debugxw/blog/master/image/register.png)
+![personHome](https://raw.githubusercontent.com/debugxw/blog/master/image/personHome.png)
+![articleBody](https://raw.githubusercontent.com/debugxw/blog/master/image/articleBody.png)
+![articleReview](https://raw.githubusercontent.com/debugxw/blog/master/image/articleReview.png)
