@@ -26,7 +26,7 @@
         <dbcp.version>2.6.0</dbcp.version>
         <commons-pool.version>1.5.4</commons-pool.version>
         <spring-tx.version>4.3.18.RELEASE</spring-tx.version>
-        <json.version>2.7.0</json.version>
+        <json.version>2.10.1</json.version>
         <commons-fileupload.version>1.3.1</commons-fileupload.version>
         <commons-io.version>2.4</commons-io.version>
         <redis-version>2.9.0</redis-version>
